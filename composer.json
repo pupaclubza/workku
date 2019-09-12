@@ -1,0 +1,7 @@
+{
+    "require": {
+        "linecorp/line-bot-sdk": "^3.11",
+	"intervention/image": "^2.4",
+	"mpdf/mpdf": "^7.1.0"
+    }
+}
