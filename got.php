@@ -1,3 +1,3 @@
 <?php
-  echo "got fire";
+  echo "got fire test1";
  ?>
