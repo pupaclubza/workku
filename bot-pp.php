@@ -43,8 +43,8 @@
     }
 
     // ส่วนของคำสั่งตอบกลับข้อความ
-    /*$response = $bot->replyMessage($replyToken,$replyData);
-    if ($response->isSucceeded()) {
+    $response = $bot->replyMessage($replyToken,$replyData);
+    /*if ($response->isSucceeded()) {
         echo 'Succeeded!';
         return;
     }
