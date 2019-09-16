@@ -35,6 +35,7 @@
                             break;
         }
     }
+    echo "line OK if ok ok";
 
     $response = $bot->replyMessage($replyToken,$replyData);
     if ($response->isSucceeded()) {
@@ -42,7 +43,7 @@
         return;
     }
 
-echo "line OK if ok ok";
+
 
 
  ?>
