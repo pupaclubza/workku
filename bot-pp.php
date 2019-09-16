@@ -46,6 +46,6 @@
     }
 
 
-
-
+//ถ้าผิด
+echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
  ?>
