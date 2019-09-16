@@ -36,6 +36,11 @@
         }
     }
 
+    $response = $bot->replyMessage($replyToken,$replyData);
+    if ($response->isSucceeded()) {
+        echo 'Succeeded!';
+        return;
+    }
 
 echo "line OK if ok ok";
 
