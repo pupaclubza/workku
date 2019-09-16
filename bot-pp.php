@@ -23,7 +23,7 @@
   $events = json_decode($content, true);
 
   //ทำไฟส์เทส ที่รับข้อมูลมาจาก line
-  file_put_contents('log.txt', file_get_contents('php://input') . PHP_EOL, FILE_APPEND);
+  //file_put_contents('log.txt', file_get_contents('php://input') . PHP_EOL, FILE_APPEND);
 
 
     if(!is_null($events)){
@@ -43,7 +43,7 @@
     }
 
     // ส่วนของคำสั่งตอบกลับข้อความ
-    $response = $bot->replyMessage($replyToken,$replyData);
+    /*$response = $bot->replyMessage($replyToken,$replyData);
     if ($response->isSucceeded()) {
         echo 'Succeeded!';
         return;
@@ -51,5 +51,5 @@
 
 
 //ถ้าผิด
-echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+echo $response->getHTTPStatus() . ' ' . $response->getRawBody();*/
  ?>
