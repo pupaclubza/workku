@@ -22,6 +22,10 @@
   // แปลงข้อความรูปแบบ JSON  ให้อยู่ในโครงสร้างตัวแปร array
   $events = json_decode($content, true);
 
+  //ทำไฟส์เทส ที่รับข้อมูลมาจาก line
+  file_put_contents('log.txt', file_get_contents('php://input') . PHP_EOL, FILE_APPEND);
+
+
     if(!is_null($events)){
         $replyToken  = $events['events'][0]['replyToken'];
         $typeMessage = $events['events'][0]['message']['type'];
