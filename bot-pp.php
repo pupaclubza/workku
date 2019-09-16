@@ -32,13 +32,10 @@
                                           $replyData = new TextMessageBuilder("Your ID: ".$events['events'][0]['source']['userId']);
                                           break;
                         }
+                            break;
         }
 
-  $response = $bot->replyMessage($replyToken,$replyData);
-    if ($response->isSucceeded()) {
-            echo 'Succeeded!';
-            return;
-      }
+
 
 echo "line OK if ok ok";
 
