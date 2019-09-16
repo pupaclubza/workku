@@ -6,6 +6,8 @@
 
 //ดึง class จากพวก line
 use LINE\LINEBot;
+use LINE\LINEBot\HTTPClient;
+use LINE\LINEBot\HTTPClient\CurlHTTPClient;
 
 
 //ดึงโทเค็นมาใช้
