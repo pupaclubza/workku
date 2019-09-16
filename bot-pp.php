@@ -33,10 +33,10 @@
 
         switch ($typeMessage){
                 case 'text':
-                            $replyData = new TextMessageBuilder("ขอบคุณที่ส่งข้อความ เราจะรีบติดต่อกับให้เร็วที่สุดโปรดฝากข้อความไว้");
+                            $replyData = new TextMessageBuilder("ขอบคุณที่ส่งข้อความ เราจะรีบติดต่อกับให้เร็วที่สุด     โปรดฝากข้อความไว้");
                             switch ($userMessage){
                                 case "id":
-                                          $replyData = new TextMessageBuilder("Your ID: ".$events['events'][0]['source']['userId']);
+                                          $replyData = new TextMessageBuilder("ไอดีของคุณคือ: ".$events['events'][0]['source']['userId']);
                                           break;
                             }
                             break;
