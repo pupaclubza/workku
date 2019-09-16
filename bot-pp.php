@@ -20,7 +20,10 @@ $content = file_get_contents('php://input');
 
 // แปลงข้อความรูปแบบ JSON  ให้อยู่ในโครงสร้างตัวแปร array
 $events = json_decode($content, true);
-echo "line OK";
+if(!is_null($events)){
+
+}
+echo "line OK if ok";
 
 
  ?>
