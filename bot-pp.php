@@ -1,5 +1,5 @@
 <?php
-  require "./vendor/autoload.php"; //ดึงการใช้งานพวก line mpdf
+  require_once"./vendor/autoload.php"; //ดึงการใช้งานพวก line mpdf
   require_once 'bot_settings.php'; //ดึงการใช้งาน ค่าห้อง id secret
 
 
@@ -37,8 +37,8 @@
                             break;
         }
     }
-    echo "line OK if ok ok";
 
+    // ส่วนของคำสั่งตอบกลับข้อความ
     $response = $bot->replyMessage($replyToken,$replyData);
     if ($response->isSucceeded()) {
         echo 'Succeeded!';
