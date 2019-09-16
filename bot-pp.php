@@ -29,11 +29,11 @@
 
         switch ($typeMessage){
                 case 'text':
-                        switch ($userMessage){
+                            switch ($userMessage){
                                 case "id":
                                           $replyData = new TextMessageBuilder("Your ID: ".$events['events'][0]['source']['userId']);
                                           break;
-                        }
+                            }
                             break;
         }
     }
