@@ -1,5 +1,5 @@
 <?php
-  require_once"./vendor/autoload.php"; //ดึงการใช้งานพวก line mpdf
+  require_once "./vendor/autoload.php"; //ดึงการใช้งานพวก line mpdf
   require_once 'bot_settings.php'; //ดึงการใช้งาน ค่าห้อง id secret
 
 
